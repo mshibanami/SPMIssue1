@@ -11,6 +11,11 @@
 		0022E59E299CC1E40015577E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022E59D299CC1E40015577E /* ContentView.swift */; };
 		0022E5A0299CC1E40015577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0022E59F299CC1E40015577E /* Assets.xcassets */; };
 		0022E5A3299CC1E40015577E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0022E5A2299CC1E40015577E /* Preview Assets.xcassets */; };
+		0022E5AB299CC22C0015577E /* Flurry in Frameworks */ = {isa = PBXBuildFile; productRef = 0022E5AA299CC22C0015577E /* Flurry */; };
+		0022E5B0299CC23A0015577E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022E59D299CC1E40015577E /* ContentView.swift */; };
+		0022E5B1299CC23A0015577E /* SPMIssue1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022E59B299CC1E30015577E /* SPMIssue1App.swift */; };
+		0022E5B5299CC23A0015577E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0022E5A2299CC1E40015577E /* Preview Assets.xcassets */; };
+		0022E5B6299CC23A0015577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0022E59F299CC1E40015577E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +24,19 @@
 		0022E59D299CC1E40015577E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0022E59F299CC1E40015577E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0022E5A2299CC1E40015577E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0022E5BA299CC23A0015577E /* SPMIssue1Copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMIssue1Copy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0022E595299CC1E30015577E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0022E5AB299CC22C0015577E /* Flurry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0022E5B2299CC23A0015577E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				0022E598299CC1E30015577E /* SPMIssue1.app */,
+				0022E5BA299CC23A0015577E /* SPMIssue1Copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,8 +98,30 @@
 			dependencies = (
 			);
 			name = SPMIssue1;
+			packageProductDependencies = (
+				0022E5AA299CC22C0015577E /* Flurry */,
+			);
 			productName = SPMIssue1;
 			productReference = 0022E598299CC1E30015577E /* SPMIssue1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0022E5AC299CC23A0015577E /* SPMIssue1Copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0022E5B7299CC23A0015577E /* Build configuration list for PBXNativeTarget "SPMIssue1Copy" */;
+			buildPhases = (
+				0022E5AF299CC23A0015577E /* Sources */,
+				0022E5B2299CC23A0015577E /* Frameworks */,
+				0022E5B4299CC23A0015577E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPMIssue1Copy;
+			packageProductDependencies = (
+			);
+			productName = SPMIssue1;
+			productReference = 0022E5BA299CC23A0015577E /* SPMIssue1Copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,11 +148,15 @@
 				Base,
 			);
 			mainGroup = 0022E58F299CC1E30015577E;
+			packageReferences = (
+				0022E5A9299CC22C0015577E /* XCRemoteSwiftPackageReference "FlurrySwiftPackage" */,
+			);
 			productRefGroup = 0022E599299CC1E30015577E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0022E597299CC1E30015577E /* SPMIssue1 */,
+				0022E5AC299CC23A0015577E /* SPMIssue1Copy */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +171,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0022E5B4299CC23A0015577E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0022E5B5299CC23A0015577E /* Preview Assets.xcassets in Resources */,
+				0022E5B6299CC23A0015577E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,6 +189,15 @@
 			files = (
 				0022E59E299CC1E40015577E /* ContentView.swift in Sources */,
 				0022E59C299CC1E30015577E /* SPMIssue1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0022E5AF299CC23A0015577E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0022E5B0299CC23A0015577E /* ContentView.swift in Sources */,
+				0022E5B1299CC23A0015577E /* SPMIssue1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +376,64 @@
 			};
 			name = Release;
 		};
+		0022E5B8299CC23A0015577E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SPMIssue1/Preview Content\"";
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.mshibanami.SPMIssue1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0022E5B9299CC23A0015577E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SPMIssue1/Preview Content\"";
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.mshibanami.SPMIssue1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,7 +455,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0022E5B7299CC23A0015577E /* Build configuration list for PBXNativeTarget "SPMIssue1Copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0022E5B8299CC23A0015577E /* Debug */,
+				0022E5B9299CC23A0015577E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0022E5A9299CC22C0015577E /* XCRemoteSwiftPackageReference "FlurrySwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/flurry/FlurrySwiftPackage/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0022E5AA299CC22C0015577E /* Flurry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0022E5A9299CC22C0015577E /* XCRemoteSwiftPackageReference "FlurrySwiftPackage" */;
+			productName = Flurry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0022E590299CC1E30015577E /* Project object */;
 }
